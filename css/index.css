@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Grenze Gotisch', cursive;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    /* possivel gradient */
+    /*  background: linear-gradient(to bottom left, #2B384A, #2451b1, #27313f); */
+}
+
+.box {
+    background: #2B384A;
+    height: calc(100% - 100px);
+}
+
+.div-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.title {
+    font-size: 3em;
+    font-weight: 100;
+}
+
+.sub-title {
+    font-size: 3em;
+    font-weight: 100;
+}
+
+.selection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 150px;
+}
+
+.icon {
+    height: 100px;
+    cursor: pointer;
+    margin-right: 50px;
+    margin-left: 50px;
+}
+
+.footer {
+    justify-content: center;
+    align-items: center;
+    background: #2B384A;
+    color: white;
+    height: 100px;
+}
+
+.list {
+    display: flex;
+}
+
+.link {
+    display: inline-block;
+    padding: 10px;
+    color: white;
+}
+
+
+/* ajustando posições das imagens 
+ajustando layout
+
+*/
