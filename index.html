@@ -10,16 +10,38 @@
 </head>
 
 <body>
+
     <main class="box">
+        <!-- main -->
+
         <div class="div-title">
             <h1 class="title">Jokenpô</h1>
             <h2 class="sub-title">clica na tua ae</h2>
         </div>
 
+        <div class="resultado">
+            <!-- aqui aparece o resultado -->
+            <p id="resultado"></p>
+        </div>
+
         <div class="selection">
-            <img class="hover-img icon" src="assents/rock.svg" alt="Pedra">
-            <img class="hover-img icon" src="assents/Hand-02.svg" alt="Papel">
-            <img class="hover-img icon" src="assents/scissor.svg" alt="Tesoura">
+            <!-- Seleção do jogador -->
+            <button class="button-section" onclick="jogar()"><img class="hover-img icon" onclick="selecao(0)" src="assents/rock.svg" alt="Pedra"></button>
+            <button class="button-section" onclick="jogar()"> <img class="hover-img icon" onclick="selecao(1)" src="assents/Hand-02.svg" alt="Papel"></button>
+            <button class="button-section" onclick="jogar()"><img class="hover-img icon" onclick="selecao(2)" src="assents/scissor.svg" alt="Tesoura"></button>
+        </div>
+
+
+        <div class="score-life">
+            <!-- Contator de vida e score -->
+            <h1 id="pontos">
+                Belezura de Pontos: 0
+            </h1>
+            <h1 id="vida">
+                Vida: 3
+            </h1>
+            <button class="reset-button" onclick="reset()">Resetar</button>
+            <!-- reset button -->
         </div>
 
     </main>
@@ -33,6 +55,7 @@
         </ul>
         <p>&copy; 2020</p>
     </footer>
+    <script src="js/index.js"></script>
 </body>
 
 </html>
