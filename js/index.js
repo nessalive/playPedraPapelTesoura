@@ -1,7 +1,7 @@
 let escolhaJogador
-let score = document.querySelector("h1#pontos")
+let score = document.querySelector("h3#pontos")
 let valorScore = 0
-let vida = document.querySelector("h1#vida")
+let vida = document.querySelector("h3#vida")
 let valorVida = 3
 let resultado = document.querySelector("p#resultado")
 

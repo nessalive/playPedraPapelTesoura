@@ -4,7 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="css/index.css">
     <title>PlayPedraPapelTesoura</title>
 </head>
@@ -19,39 +21,47 @@
             <h2 class="sub-title">clica na tua ae</h2>
         </div>
 
+
+        <div class="selection">
+            <!-- Seleção do jogador -->
+            <button class="button-section" onclick="jogar()"><img class="hover-img icon" onclick="selecao(0)"
+                    src="assents/rock.svg" alt="Pedra"></button>
+            <button class="button-section" onclick="jogar()"> <img class="hover-img icon" onclick="selecao(1)"
+                    src="assents/Hand-02.svg" alt="Papel"></button>
+            <button class="button-section" onclick="jogar()"><img class="hover-img icon" onclick="selecao(2)"
+                    src="assents/scissor.svg" alt="Tesoura"></button>
+        </div>
+        
         <div class="resultado">
             <!-- aqui aparece o resultado -->
             <p id="resultado"></p>
         </div>
 
-        <div class="selection">
-            <!-- Seleção do jogador -->
-            <button class="button-section" onclick="jogar()"><img class="hover-img icon" onclick="selecao(0)" src="assents/rock.svg" alt="Pedra"></button>
-            <button class="button-section" onclick="jogar()"> <img class="hover-img icon" onclick="selecao(1)" src="assents/Hand-02.svg" alt="Papel"></button>
-            <button class="button-section" onclick="jogar()"><img class="hover-img icon" onclick="selecao(2)" src="assents/scissor.svg" alt="Tesoura"></button>
-        </div>
-
-
         <div class="score-life">
             <!-- Contator de vida e score -->
-            <h1 id="pontos">
+            <h3 id="pontos">
                 Belezura de Pontos: 0
-            </h1>
-            <h1 id="vida">
+            </h3>
+            <h3 id="vida">
                 Vida: 3
-            </h1>
+            </h3>
             <button class="reset-button" onclick="reset()">Resetar</button>
             <!-- reset button -->
         </div>
+
+
 
     </main>
     <footer class="footer">
         <p>Desenvolvido Por:</p>
         <ul class="list">
             <li class="list-link"><a class="link" href="https://www.linkedin.com/in/alisonmtmelo/">Alison Melo</a></li>
-            <li class="list-link"><a class="link" href="https://www.linkedin.com/in/ana-beatriz-4b8604179/">Ana Beatriz</a></li>
-            <li class="list-link"><a class="link" href="linkedin.com/in/shellcya-habiakel-1344301ab">Shellcya Habiakel</a></li>
-            <li class="list-link"><a class="link" href="https://www.linkedin.com/in/vanessa-oliveira-0036a4154/">Vanessa Oliveira</a></li>
+            <li class="list-link"><a class="link" href="https://www.linkedin.com/in/ana-beatriz-4b8604179/">Ana
+                    Beatriz</a></li>
+            <li class="list-link"><a class="link" href="linkedin.com/in/shellcya-habiakel-1344301ab">Shellcya
+                    Habiakel</a></li>
+            <li class="list-link"><a class="link" href="https://www.linkedin.com/in/vanessa-oliveira-0036a4154/">Vanessa
+                    Oliveira</a></li>
         </ul>
         <p>&copy; 2020</p>
     </footer>

@@ -1,80 +1,4 @@
-<<<<<<< HEAD
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    list-style: none;
-    text-decoration: none;
-    font-family: 'Grenze Gotisch', cursive;
-}
 
-body {
-    width: 100vw;
-    height: 100vh;
-    /* possivel gradient */
-    /*  background: linear-gradient(to bottom left, #2B384A, #2451b1, #27313f); */
-}
-
-.box {
-    background: #2B384A;
-    height: calc(100% - 100px);
-}
-
-.div-title {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: white;
-}
-
-.title {
-    font-size: 3em;
-    font-weight: 100;
-}
-
-.sub-title {
-    font-size: 3em;
-    font-weight: 100;
-}
-
-.selection {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 150px;
-}
-
-.icon {
-    height: 100px;
-    cursor: pointer;
-    margin-right: 50px;
-    margin-left: 50px;
-}
-
-.footer {
-    justify-content: center;
-    align-items: center;
-    background: #2B384A;
-    color: white;
-    height: 100px;
-}
-
-.list {
-    display: flex;
-}
-
-.link {
-    display: inline-block;
-    padding: 10px;
-    color: white;
-}
-
-
-/* ajustando posições das imagens 
-ajustando layout
-
-=======
     * {
         margin: 0;
         padding: 0;
@@ -85,14 +9,12 @@ ajustando layout
     }
     
     body {
-        width: 100vw;
         height: 100vh;
         /* possivel gradient */
-        /*  background: linear-gradient(to bottom left, #2B384A, #2451b1, #27313f); */
+         background: linear-gradient(to bottom left, #640c75, #b037b4, #e285eb);
     }
     
     .box {
-        background: #2B384A;
         height: calc(100% - 100px);
     }
     
@@ -113,14 +35,43 @@ ajustando layout
         font-size: 3em;
         font-weight: 100;
     }
+    .score-life {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        color: #fff;
+        margin-top: 20px;
+    }
+    .resultado {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+        margin-top: 50px;
+        padding: 0;
+        font-size: 1.5rem;
+    }
     
     .selection {
         display: flex;
         justify-content: center;
         align-items: center;
-        padding: 150px;
+        margin-top: 50px;
     }
-    
+    .reset-button {
+        cursor: pointer;
+        margin-top: 20px;
+        width: 150px;
+        height: 40px;
+        border-radius: 5px;
+        border: none;
+        font-size: 20px;
+        background-color: palevioletred;
+    }
+    .reset-button:hover  {
+        background-color: pink;
+    }
     @media(max-width: 450px) {
         .selection {
             flex-direction: column;
@@ -147,7 +98,9 @@ ajustando layout
         text-align: center;
         justify-content: center;
         align-items: center;
-        background: #2B384A;
+        background: #981db1;
+        
+
         color: white;
         height: 100px;
     }
@@ -167,6 +120,7 @@ ajustando layout
         padding: 10px;
         color: white;
     }
+    
     /* ajustando posições das imagens 
 ajustando layout
 
