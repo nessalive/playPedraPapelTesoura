@@ -51,6 +51,12 @@
         }
     }
     
+    .selection button {
+        background: none;
+        border: none;
+        outline: none;
+    }
+    
     .icon {
         height: 100px;
         cursor: pointer;
