@@ -10,11 +10,11 @@ function selecao(escolha) {
     escolhaJogador = escolha
 
     if (escolhaJogador == 0) {
-        escolhaJogador = "pedra"
+        escolhaJogador = "Pedra"
     } else if (escolhaJogador == 1) {
-        escolhaJogador = "papel"
+        escolhaJogador = "Papel"
     } else {
-        escolhaJogador = "tesoura"
+        escolhaJogador = "Tesoura"
     }
     /*   window.alert(`${escolhaJogador}`) */
 }
@@ -23,41 +23,41 @@ function jogar() {
 
     let escolhaComputador = Math.floor(Math.random() * (3 - 0) - 0)
     if (escolhaComputador == 0) {
-        escolhaComputador = "pedra"
+        escolhaComputador = "Pedra"
     } else if (escolhaComputador == 1) {
-        escolhaComputador = "papel"
+        escolhaComputador = "Papel"
     } else {
-        escolhaComputador = "tesoura"
+        escolhaComputador = "Tesoura"
     }
 
-    if (escolhaJogador === "pedra") {
-        if (escolhaComputador === "pedra") {
-            resultado.innerHTML = `empate, você escolheu ${escolhaJogador} o computador escolheu ${escolhaComputador}`
-        } else if (escolhaComputador === "tesoura") {
-            resultado.innerHTML = `Jogador venceu, você escolheu ${escolhaJogador} o computador escolheu ${escolhaComputador}`
+    if (escolhaJogador === "Pedra") {
+        if (escolhaComputador === "Pedra") {
+            resultado.innerHTML = `Empate, você escolheu ${escolhaJogador} o computador escolheu ${escolhaComputador}`
+        } else if (escolhaComputador === "Tesoura") {
+            resultado.innerHTML = `Jogador Ganhou, você escolheu ${escolhaJogador} o computador escolheu ${escolhaComputador}`
             valorScore++
         } else {
             resultado.innerHTML = `Jogador Perdeu, você escolheu ${escolhaJogador} o computador escolheu ${escolhaComputador}`
             valorVida--
         }
-    } else if (escolhaJogador === "tesoura") {
-        if (escolhaComputador === "pedra") {
+    } else if (escolhaJogador === "Tesoura") {
+        if (escolhaComputador === "Pedra") {
             resultado.innerHTML =  `Jogador Perdeu, você escolheu ${escolhaJogador} o computador escolheu ${escolhaComputador}`
             valorVida--
-        } else if (escolhaComputador === "tesoura") {
-            resultado.innerHTML = `Jogador Ganhou, você escolheu ${escolhaJogador} o computador escolheu ${escolhaComputador}`
+        } else if (escolhaComputador === "Tesoura") {
+            resultado.innerHTML = `Empate, você escolheu ${escolhaJogador} o computador escolheu ${escolhaComputador}`
             valorScore++
         } else {
-            resultado.innerHTML = `Empate, você escolheu ${escolhaJogador} o computador escolheu ${escolhaComputador}`
-        }
-    } else if (escolhaJogador === "papel") {
-        if (escolhaComputador === "tesoura") {
             resultado.innerHTML = `Jogador Ganhou, você escolheu ${escolhaJogador} o computador escolheu ${escolhaComputador}`
+        }
+    } else if (escolhaJogador === "Papel") {
+        if (escolhaComputador === "Tesoura") {
+            resultado.innerHTML = `Jogador Perdeu, você escolheu ${escolhaJogador} o computador escolheu ${escolhaComputador}`
             valorScore++
-        } else if (escolhaComputador === "papel") {
+        } else if (escolhaComputador === "Papel") {
             resultado.innerHTML =  `Empate, você escolheu ${escolhaJogador} o cumputador escolheu ${escolhaComputador}` 
         } else {
-           resultado.innerHTML = `Jogador Perdeu, você escolheu ${escolhaComputador} o computador escolheu ${escolhaComputador}`
+           resultado.innerHTML = `Jogador Ganhou, você escolheu ${escolhaJogador} o computador escolheu ${escolhaComputador}`
             valorVida--
         }
     }
@@ -67,7 +67,7 @@ function jogar() {
         valorVida = 3
         valorScore = 0
     }
-    score.innerHTML = ` Belezura de Pontos: ${valorScore}`
+    score.innerHTML = `Pontos: ${valorScore}`
     vida.innerHTML = `Vidas: ${valorVida}`
 }
 

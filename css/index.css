@@ -15,7 +15,7 @@
     }
     
     .box {
-        height: calc(100% - 100px);
+        height: calc(100% - 6.25rem);
     }
     
     .div-title {
@@ -27,7 +27,7 @@
     }
     
     .title {
-        font-size: max(3em, 15px);
+        font-size: max(3em, 0.938rem);
         font-weight: 100;
     }
     
@@ -41,41 +41,43 @@
         flex-direction: column;
         align-items: center;
         color: #fff;
-        margin-top: 20px;
+        margin-top: 1.25rem;
     }
     .resultado {
         display: flex;
         justify-content: center;
         align-items: center;
         color: #fff;
-        margin-top: 50px;
+        margin-top: 3.125rem;
         padding: 0;
         font-size: 1.5rem;
+        border: 2px dashed black;
     }
     
     .selection {
         display: flex;
         justify-content: center;
         align-items: center;
-        margin-top: 50px;
+        margin-top: 3.125rem;
     }
     .reset-button {
         cursor: pointer;
-        margin-top: 20px;
-        width: 150px;
-        height: 40px;
-        border-radius: 5px;
+        margin-top: 1.25rem;
+        width: 9.375rem;
+        height:2.5rem;
+        border-radius: 0.313rem;
         border: none;
-        font-size: 20px;
-        background-color: palevioletred;
+        font-size:1.25rem;
+        background-color: rgb(122, 0, 102);
+        color:white;
     }
     .reset-button:hover  {
-        background-color: pink;
+        background-color: rgb(240, 122, 210);
     }
-    @media(max-width: 450px) {
+    @media(max-width: 28.125rem) {
         .selection {
             flex-direction: column;
-            padding: 50px;
+            padding: 3.125rem;
         }
     }
     
@@ -86,10 +88,10 @@
     }
     
     .icon {
-        height: 100px;
+        height: 6.25rem;
         cursor: pointer;
-        margin-right: 50px;
-        margin-left: 50px;
+        margin-right: 3.125rem;
+        margin-left: 3.125rem;
     }
     
     .footer {
@@ -98,16 +100,16 @@
         text-align: center;
         justify-content: center;
         align-items: center;
-        background: #981db1;
+        background: linear-gradient(to bottom left, #af20cc, #d377d6, #cc6cd4);
         
 
         color: white;
-        height: 100px;
+        height: 6.25rem;
     }
     
-    @media(max-width: 450px) {
+    @media(max-width: 28.125rem) {
         .footer {
-            height: 150px;
+            height: 9.375rem;
         }
     }
     
@@ -117,7 +119,7 @@
     
     .link {
         display: inline-block;
-        padding: 10px;
+        padding: 0.625rem;
         color: white;
     }
     
