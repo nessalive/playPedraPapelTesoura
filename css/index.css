@@ -52,6 +52,9 @@ body {
 }
 
 .footer {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
     justify-content: center;
     align-items: center;
     background: #2B384A;
