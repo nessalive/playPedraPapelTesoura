@@ -67,7 +67,7 @@ function jogar() {
         valorScore = 0
     }
     score.innerHTML = ` Belezura de Pontos: ${valorScore}`
-    vida.innerHTML = `Vida: ${valorVida}`
+    vida.innerHTML = `Vidas: ${valorVida}`
 }
 
 
