@@ -1,9 +1,10 @@
 # playPedraPapelTesoura
-can i make changes?
 
+# Jogo jokenpô 
 
-oiiii crie a interatividade do jogo
+#### divirta-se nas horas vagas, com pontuação e conta vidas. 
 
-coloquei uma pontuação de score e um contador de vida que quando perder todas as vidas reseta os pontos
+[acesse aqui](play-pedra-papel-tesoura.netlify.app)
 
-adicione algum elementos no html que ainda vai ter alterações
+## Desenvolvido por :
+##### [Alisson Melo](https://www.linkedin.com/in/alisonmtmelo/), [Ana Beatriz](https://www.linkedin.com/in/ana-beatriz-4b8604179/), [Shellcya Habiakel](linkedin.com/in/shellcya-habiakel-1344301ab), [Vanessa Oliveira](https://www.linkedin.com/in/vanessa-oliveira-0036a4154/). 
