@@ -17,11 +17,21 @@
         </div>
 
         <div class="selection">
-            <img class="hover-img icon" src="assents/rock.svg" alt="Pedra">
-            <img class="hover-img icon" src="assents/Hand-02.svg" alt="Papel">
-            <img class="hover-img icon" src="assents/scissor.svg" alt="Tesoura">
-        </div>
+            <button class="button-section" onclick="jogar()"><img class="hover-img icon" onclick="selecao(0)" src="assents/rock.svg" alt="Pedra"></button>
+            <button class="button-section" onclick="jogar()"> <img class="hover-img icon" onclick="selecao(1)" src="assents/Hand-02.svg" alt="Papel"></button>
+            <button class="button-section" onclick="jogar()"><img class="hover-img icon" onclick="selecao(2)" src="assents/scissor.svg" alt="Tesoura"></button>
 
+        </div>
+        <div class="score-life">
+            <h1 id="pontos">
+                Belezura de Pontos: 0
+            </h1>
+            <h1 id="vida">
+                Vida: 3
+            </h1>
+            <button class="reset-button" onclick="reset()">Resetar</button>
+
+        </div>
     </main>
     <footer class="footer">
         <p>Desenvolvido Por:</p>
@@ -33,6 +43,7 @@
         </ul>
         <p>&copy; 2020</p>
     </footer>
+    <script src="js/index.js"></script>
 </body>
 
 </html>
