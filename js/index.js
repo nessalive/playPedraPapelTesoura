@@ -71,7 +71,12 @@ function jogar() {
     vida.innerHTML = `Vidas: ${valorVida}`
 }
 
-
+function reset() {
+    valorScore = 0
+    valorVida = 3
+    score.innerHTML = `Belezura de Pontos: ${valorScore}`
+    vida.innerHTML = `Vidas: ${valorVida}`
+}
 
 
 
